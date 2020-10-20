@@ -1,0 +1,9 @@
+<div class="board">
+    <div *ngFor="let column of columns" class="alis-col-4">
+        <div *ngFor="let widget of column.widgets">
+            <mat-card style="margin: 1rem;">
+                <ng-template appDashboardOutlet [widget]="widget"></ng-template>
+            </mat-card>
+        </div>
+    </div>
+</div>
